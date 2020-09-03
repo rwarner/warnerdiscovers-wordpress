@@ -267,6 +267,14 @@ function manor_menu_fallback() {
 	);
 }
 
+
+function custom_functions() {
+    wp_register_script('custom_functions', get_template_directory_uri() . '/js/custom-functions.js', array('jquery'), true);
+    wp_enqueue_script('custom_functions');
+} 
+
+add_action( 'wp_enqueue_scripts', 'custom_functions', 999 ); 
+
 // Custom template tags.
 require get_parent_theme_file_path( 'inc/template-tags.php' );
 
