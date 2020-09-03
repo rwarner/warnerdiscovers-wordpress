@@ -11,6 +11,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- Pinterest business connection -->
+	<meta name="p:domain_verify" content="2df23fab5ba9151c35e7d041970f323f"/> 
+	
 	<link rel="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
