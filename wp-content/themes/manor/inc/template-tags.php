@@ -10,18 +10,21 @@ if ( ! function_exists( 'manor_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
 	function manor_posted_on() {
+		/*
 		// Get the author name; wrap it in a link.
 		$byline = sprintf(
 			// translators: %s is author name.
 			__( 'by %s', 'manor' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_the_author() . '</a></span>'
-		);
+		);*/
 
 		$cats = get_the_category();
 		if ( ! empty( $cats ) ) {
 			printf( '<span class="posted-in"><a href="%s">%s</a></span>', esc_url( get_term_link( $cats[0] ) ), esc_attr( $cats[0]->name ) );
 		}
-		echo '<span class="posted-on">' . manor_time_link() . '</span><span class="byline"> ' . $byline . '</span>';
+		
+		/*
+		echo '<span class="posted-on">' . manor_time_link() . '</span><span class="byline"> ' . $byline . '</span>';*/
 	}
 endif;
 

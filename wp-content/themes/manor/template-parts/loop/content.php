@@ -71,12 +71,14 @@ if ( 'post' === get_post_type() ) {
 	<?php else : ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
+			<!--
 			<p><a href="<?php the_permalink(); ?>" class="read-more">
 				<?php
-				/* translators: %s: Name of the current post */
+				/* translators: %s: Name of the current post*/
 				printf( __( 'Continue reading<span class="screen-reader-text">%s</span>', 'manor' ), esc_html( get_the_title() ) );
+				
 				?>
-			</a></p>
+			</a></p> -->
 			<?php wp_link_pages(); ?>
 		</div>
 	<!-- /.entry-summary -->
@@ -112,12 +114,14 @@ if ( 'post' === get_post_type() ) {
 	<?php else : ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
+			
+			<!--
 			<p><a href="<?php the_permalink(); ?>" class="read-more">
 				<?php
 				/* translators: %s: Name of the current post */
 				printf( __( 'Continue reading<span class="screen-reader-text">%s</span>', 'manor' ), esc_html( get_the_title() ) );
 				?>
-			</a></p>
+			</a></p> -->
 			<?php wp_link_pages(); ?>
 		</div>
 	<!-- /.entry-summary -->
