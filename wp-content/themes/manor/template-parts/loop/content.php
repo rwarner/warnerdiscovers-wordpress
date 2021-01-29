@@ -62,7 +62,16 @@ if ( 'post' === get_post_type() ) {
 	<!-- /.entry-thumbnail -->
 	<?php endif; ?>
 
-	<?php if ( $manor_media ) : ?>
+	
+	<!-- Start by checking if the embedded media is a youtube embed and make sure we don't already have the figure tag already !-->
+	<!-- Insert $manor_media into the proper youtube re-sizable embed rather than the entry-media block below -->
+	<?php if ( strpos($manor_media, 'youtube.com') !== false && strpos($manor_media, 'figure') == false ) : ?>
+		<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+			<div class="wp-block-embed__wrapper">
+				<?php echo $manor_media; ?>
+			</div>
+		</figure>
+	<?php elseif ( $manor_media ) : ?>
 		<div class="entry-media">
 			<?php echo $manor_media; ?>
 		</div>
