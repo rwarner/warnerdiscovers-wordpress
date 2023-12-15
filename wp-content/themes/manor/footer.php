@@ -29,7 +29,7 @@
 			<div id="colophon" class="colophon">
 				<?php
 				/* translators: site name */
-				echo esc_html( sprintf( __( '&copy; 2021 %s', 'manor' ), esc_html( get_bloginfo( 'name' ) ) ) );
+				echo esc_html( sprintf( __( '&copy; 2024 %s', 'manor' ), esc_html( get_bloginfo( 'name' ) ) ) );
 				?>
 			</div>
 		</div>
