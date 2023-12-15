@@ -952,8 +952,8 @@ li.comment .reply {
   content: '';
   display: block;
   width: 2px;
-  height: 20px;
-  margin: 10px auto;
+  height: 0px;
+  margin: 5px auto;
   background-color: #DF6296;
 }
 .entry-meta > span:not(:last-child):after {
@@ -1345,4 +1345,39 @@ p.has-drop-cap:not(:focus):first-letter {
   }
 }
 
+
+@font-face { 
+  font-family: Champagne Limo-Regular; 
+  src: url(fonts/Champ_Limo/Champ_Limo.woff2) format('woff2'); 
+  src: url(fonts/Champ_Limo/Champ_Limo.woff) format('woff'); 
+  src: url(fonts/Champ_Limo/Champ_Limo.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: Champagne Limo-Bold; 
+  src: url(fonts/Champ_Limo/Champ_Limo_Bold.woff2) format('woff2'); 
+  src: url(fonts/Champ_Limo/Champ_Limo_Bold.woff) format('woff'); 
+  src: url(fonts/Champ_Limo/Champ_Limo_Bold.ttf) format('truetype'); 
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: High Class-Regular; 
+  src: url(fonts/High_Class/High_Class.woff) format('woff'); 
+  src: url(fonts/High_Class/High_Class.ttf) format('truetype'); 
+  font-weight: normal;
+  font-style: normal; 
+}
+
+
+@font-face { 
+  font-family: Sweet Buddy-Regular; 
+  src: url(fonts/sweet_buddy/Sweet_Buddy.woff) format('woff'); 
+  src: url(fonts/sweet_buddy/Sweet_Buddy.ttf) format('truetype'); 
+  font-weight: normal;
+  font-style: normal; 
+}
 /*# sourceMappingURL=style.css.map */
